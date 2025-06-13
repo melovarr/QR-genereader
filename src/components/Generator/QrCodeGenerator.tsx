@@ -6,13 +6,13 @@ export const QrCodeGenerator = () => {
   const [value, setValue] = useState("");
   const [showQr, setShowQr] = useState("");
 
-  const onClickHandler = (event) => {
-    // console.log("testing once more", event);
+  const onClickHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
+    console.log(event);
     setShowQr(value);
     setValue("");
   };
 
-  const inputChangeHandler = (event) => {
+  const inputChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
     setShowQr("");
   };
