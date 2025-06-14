@@ -9,7 +9,7 @@ export const GenHistory = () => {
       {genData.map((text: string) => (
         <p key={text}>
           {text}
-          <QRCodeSVG value={text} size={50} />
+          <QRCodeSVG value={text} size={100} />
         </p>
       ))}
     </div>
