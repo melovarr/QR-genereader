@@ -1,9 +1,11 @@
 .container {
+  background: #aaa;
   display: flex;
   flex-direction: column;
   gap: 15px;
   align-items: center;
   justify-content: center;
+  padding: 30px 0;
 }
 
 .input {
