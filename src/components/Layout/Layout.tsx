@@ -11,7 +11,7 @@ export const Layout = () => {
       <Navigation />
 
       <Routes>
-        <Route path="/" element={<Navigation />} />
+        {/* <Route path="/" element={<Navigation />} /> */}
         <Route path="/generate" element={<QrCodeGenerator />} />
         <Route path="/scan" element={<QrCodeScaner />} />
         <Route path="/genstory" element={<GenHistory />} />
